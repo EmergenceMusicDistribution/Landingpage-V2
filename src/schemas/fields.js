@@ -1,0 +1,15 @@
+const fields = [
+  "firstName",
+  "lastName",
+  "age",
+  "dateOfBirth",
+  "location",
+  "address",
+  "email",
+  "phoneNumber",
+  "language",
+  "artistName",
+  "musicGenre",
+  "spotifyPage",
+  "instagramPage",
+];
