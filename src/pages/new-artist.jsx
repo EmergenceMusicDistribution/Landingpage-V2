@@ -5,13 +5,14 @@ import { BasicExample } from '../components/FormikForm';
 
 export const NewArtist = () => {
     const navigate = useNavigate()
-    const key = import.meta.env.SHEETS_KEY
+    const sheetsKey = import.meta.env.VITE_SHEETS_KEY
 
 const next = async(userInfo)=>{ 
        try {
-         await axios.post(key, userInfo)
+         await axios.post(sheetsKey, userInfo)
          .then(response=>{
-             console.log(response)
+            
+             window.location.href = "https://calendly.com/emergencemusicdistribution/30min?month=2024-09"
          })
        } catch (error) {
         console.log(error)   
