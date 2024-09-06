@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Section2 = () => {
   return (
-    <div className='bg-[#1e1f26] sm:px-3 text-white space-y-8 py-8'>
+    <div style={{background:'linear-gradient(90deg, #231517, #121213 49%, #1e1925)'}} className='bg-[#1e1f26] sm:px-3 text-white space-y-8 py-8'>
 
      <h1 className='text-4xl text-center capitalize font-bold'> <span className=' uppercase text-teal-400'>INFINITE</span> Digital Music Streaming Platforms Worldwide</h1>   
     
@@ -13,7 +13,7 @@ export const Section2 = () => {
     </p>
     </div>
 
-    <div className='flex items-center w-1/2 sm:w-full md:w-full m-auto sm:px-0 justify-center flex-wrap gap-5'>
+    <div className='flex items-center w-1/2 sm:w-full md:w-full m-auto sm:px-0 md:px-5 justify-center flex-wrap gap-5'>
         <img className='w-32' src="/images/apple.png" alt="" />
         <img className='w-32' src="/images/spotify.png" alt="" />
         <img className='w-32' src="/images/tiktok.png" alt="" />

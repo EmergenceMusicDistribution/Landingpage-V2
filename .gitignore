@@ -11,12 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-public/locales
-components/Center
-components/LanguageSwitcher
-components/LastSection
-components/Services
-components/ServiceCard
+.env
 
 # Editor directories and files
 .vscode/*

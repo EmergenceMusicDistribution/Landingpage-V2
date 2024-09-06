@@ -1,32 +1,35 @@
-import React from 'react';
+import React from 'react'
 import { Formik,Form } from 'formik';
-import { CustomInput } from './CustomInput';
 import { basicSchema } from '../schemas';
+import { CustomInput } from '../components/CustomInput';
+import { Link, useNavigate } from 'react-router-dom';
 
-// const submitForm = ()=>{
-//   console.log("submitted")
-// }
-export const BasicExample = ({next}) => (
-  <div className='pb-10'>
+export const EmdArtist = () => {
+    const navigate = useNavigate()
+  return (
+    <>
+      <div className='grid grid-cols-12 sm:grid-cols-1 md:grid-cols-1'>
+<div className='space-y-5 pt-12 px-6 sm:px-6 md:px-8 col-span-4 bg-[#1e1f26]'>
+  <h1 className='text-3xl font-bold text-white'>Welcome to <Link to={'/'} className='text-pink-600'>Emergence</Link> </h1>
+    <h1 className='text-lg text-white'>Please fill the form with your information!</h1>
+
+<div className='pb-10'>
     <Formik
     validationSchema={basicSchema}
 
       initialValues={{ firstName: '', 
         lastName:"",
-        age:"",
-        dateOfBirth:"",
         location:"",
-        // address:"",
         email:"",
         phoneNumber:"",
-        language:"",
         artistName : "",
         musicGenre:"",
         spotifyPage:"",
         instagramPage:"",
      }}
      onSubmit={(values,actions)=>{
-      next(values)
+      // next(values)
+      console.log(actions)
      }}
     >
       {(props) => (
@@ -45,33 +48,11 @@ export const BasicExample = ({next}) => (
          />
 
         <CustomInput
-         label={"Age"}
-         name={"age"}
-         type={"number"}
-         placeholder={"Enter your Age"}
-         />
-
-        <CustomInput
-         label={"Date of Birth"}
-         name={"dateOfBirth"}
-         type={"date"}
-         placeholder={"Select your DOB"}
-         styles={"bg-gray-500"}
-         />
-
-        <CustomInput
          label={"Location"}
          name={"location"}
          type={"text"}
          placeholder={"Enter your Location"}
          />
-
-        {/* <CustomInput
-         label={"Address"}
-         name={"address"}
-         type={"text"}
-         placeholder={"Enter your Address"}
-         /> */}
 
         <CustomInput
          label={"Email"}
@@ -85,13 +66,6 @@ export const BasicExample = ({next}) => (
          name={"phoneNumber"}
          type={"number"}
          placeholder={"Enter your Phone number"}
-         />
-
-        <CustomInput
-         label={"Language"}
-         name={"language"}
-         type={"text"}
-         placeholder={"Enter your Language"}
          />
 
         <CustomInput
@@ -126,5 +100,16 @@ export const BasicExample = ({next}) => (
         </Form>
       )}
     </Formik>
-  </div>
-);
+</div>
+       
+</div>
+
+<div className='bg-gradient-to-r from-[#35222d] to-[#3e2b47] md:hidden sm:hidden col-span-8 flex justify-center items-start' >
+<img onClick={()=>navigate('/')} className='mt-80 cursor-pointer' src="/sitelogo.svg" alt="" />
+</div>
+
+    </div>
+   
+    </>
+  )
+}

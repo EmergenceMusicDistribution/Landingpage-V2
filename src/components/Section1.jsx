@@ -7,7 +7,7 @@ export const Section1 = () => {
     const navigate = useNavigate()
   return (
     <>
-    <div style={{background:'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)'}} className="flex sm:flex-col items-center md:flex-col px-16 sm:px-2 text-white sm:gap-4 md:gap-4 bg-slate-950">
+    <div style={{background:'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)'}} className="flex sm:flex-col items-center md:flex-col px-16 pt-5 sm:px-2 text-white sm:gap-4 md:gap-4 bg-slate-950">
 
     <div className='space-y-7'>
     <h1 className='text-5xl sm:text-5xl font-bold sm:text-center leading-tight sm:leading-none'>
@@ -15,18 +15,18 @@ export const Section1 = () => {
     </h1>
  
     <div className='space-x-4 sm:space-x-0 sm:flex flex-col items-center gap-5'>
-    <button onClick={()=>navigate('/register')} className='bg-gradient-to-r from-[#6c54ad] to-[#f04762] sm:w-fit hover:bg-blue-700 shadow-lg px-10 py-4 font-bold rounded-full uppercase text-xl'>{t('newArtist')}</button>
-    <button className='bg-teal-600 sm:w-fit hover:bg-teal-700 shadow-lg px-10 py-4 font-bold rounded-full uppercase text-xl'>EMD Artist</button>
+    <button onClick={()=>navigate('/new-artist')} className='bg-gradient-to-r from-[#6c54ad] to-[#f04762] sm:w-fit hover:bg-blue-700 shadow-lg px-10 py-4 font-bold hover:text-blue-500 rounded-full uppercase text-xl'>{t('newArtist')}</button>
+    <button onClick={()=>navigate('/emd-artist')} className='bg-teal-600 sm:w-fit hover:bg-teal-700 shadow-lg px-10 py-4 font-bold rounded-full uppercase text-xl'>EMD Artist</button>
     </div> 
 
 <div className='space-y-5 sm:text-center md:pb-10'>
     <div>
-        <h1 className='uppercase text-pink-500 font-bold text-3xl'>{t('newArtist')}</h1>
+        <h1 className='uppercase text-pink-500 font-bold text-2xl'>{t('newArtist')}</h1>
         <p className='text-xl'>PLEASE REQUEST A MUSIC EVALUATION.</p>
     </div>
 
     <div className='space-y-1'>
-        <h1 className='uppercase text-white font-bold text-3xl'>EMD Artist</h1>
+        <h1 className='uppercase text-teal-500  font-bold text-2xl'>EMD Artist</h1>
         <p className='text-xl'>IF YOU HAVE A NEW RELEASE COMING SOON, PLEASE CONTACT US AT</p>
         <div className=' overflow-hidden break-all'>
         <a className='text-blue-500 hover:text-blue-600 uppercase text-xl' href="mailto:SUPPORT@EMERGENCEMUSICDISTRIBUTION.COM">support@emergencemusicdistribution.com</a>
