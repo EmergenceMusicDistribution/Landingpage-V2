@@ -33,7 +33,7 @@ export const Services = () => {
             img:'images/single-promo-icon.svg', 
             pricing : {
                 // prevPrice:'',
-                currentPrice:' 133.33$ / Monthly'
+                currentPrice:' 133.33$ USD / Monthly'
             },
             duration:'90 days',
             list: [
