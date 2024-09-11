@@ -6,8 +6,8 @@ export const Footer = () => {
     const location = useLocation()
   return (
     <div className={`bg-[#212121] py-4 ${location.pathname==='/new-artist' || location.pathname==='/emd-artist' ? 'hidden': ''}`}>
-    <div className='flex justify-between flex-wrap px-32 md:px-10 sm:px-5 gap-5 py-10 sm:py-5  text-white'>
-        <div onClick={()=>navigate('/')} className='sm:pl-12'>
+    <div className='flex justify-between flex-wrap px-32 md:px-20 sm:px-5 gap-5 md:gap-7 py-10 sm:py-1 md:py-5 text-white'>
+        <div onClick={()=>navigate('/')} className=' md:w-full'>
             <img src="sitelogo.svg" alt="" />
         </div>
 
@@ -34,7 +34,7 @@ export const Footer = () => {
             <Link className='text-gray-400'>Youtube</Link>
         </div>
 
-        <div className='flex flex-col gap-3 sm:w-1/2'>
+        <div className='flex flex-col gap-3 sm:items-center'>
             <h1 className='font-bold text-lg'>Newsletter</h1>
             <form className='flex flex-col gap-3' action="">
                 <label htmlFor="" className='text-gray-400'>Email Address *</label>
@@ -43,7 +43,7 @@ export const Footer = () => {
                     <input type="checkbox" className='h-5 w-5' name="" id="" />
                     <p className='text-gray-400'>I would like to recieve emails from <span className='text-white font-bold'>Emergence</span></p>
                 </div>
-                <button className='text-white uppercase font-semibold w-fit bg-gradient-to-r from-[#6c54ad] to-[#f04762] hover:text-blue-500 rounded-full py-4 px-5' type='submit'>subscribe</button>
+                <button className='text-white uppercase font-semibold w-fit bg-gradient-to-r from-[#6c54ad] to-[#f04762] hover:text-blue-500 rounded-md py-3.5 px-5' type='submit'>subscribe</button>
             </form>
         </div>
 

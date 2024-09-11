@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {  
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },   
     //  container : {
     //   center : true,

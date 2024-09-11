@@ -48,7 +48,7 @@ export const services = [
       },
       {
         image: "images/services/Public-Relation.svg",
-        title: "Public relations",
+        title: "Public relations (PR)",
         description: "Plan your specific media rollout locally or internationally to reach your target audience and get your brand more visibility."
       },
       {

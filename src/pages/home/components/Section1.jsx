@@ -7,16 +7,16 @@ export const Section1 = () => {
     const navigate = useNavigate()
   return (
     <>
-    <div style={{background:'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)'}} className="flex sm:flex-col items-center md:flex-col px-16 pt-5 sm:px-2 text-white sm:gap-4 md:gap-4 bg-slate-950">
+    <div style={{background:'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)'}} className="flex sm:flex-col items-center md:flex-col px-20  pt-5 sm:px-2 text-white sm:gap-4 md:gap-4 bg-slate-950">
 
     <div className='space-y-7'>
-    <h1 className='text-5xl sm:text-5xl font-bold sm:text-center leading-tight sm:leading-none'>
+    <h1 className='text-5xl sm:text-3xl font-bold sm:text-center leading-snug'>
     {t('Welcome')}
     </h1>
  
     <div className='space-x-4 sm:space-x-0 sm:flex flex-col items-center gap-5'>
-    <button onClick={()=>navigate('/new-artist')} className='bg-gradient-to-r from-[#6c54ad] to-[#f04762] sm:w-fit hover:bg-blue-700 shadow-lg px-10 py-4 font-bold hover:text-blue-500 rounded-full uppercase text-xl'>{t('newArtist')}</button>
-    <button onClick={()=>navigate('/emd-artist')} className='bg-teal-600 sm:w-fit hover:bg-teal-700 shadow-lg px-10 py-4 font-bold rounded-full uppercase text-xl'>EMD Artist</button>
+    <button onClick={()=>navigate('/new-artist')} className='bg-gradient-to-r from-[#6c54ad] to-[#f04762] sm:w-fit hover:bg-blue-700 shadow-lg sm:px-5 sm:py-2 px-10 py-4 font-bold hover:text-blue-500 rounded-full uppercase text-xl'>{t('newArtist')}</button>
+    <button onClick={()=>navigate('/emd-artist')} className='bg-teal-600 sm:w-fit hover:bg-teal-700 shadow-lg px-10 py-4 sm:px-5 sm:py-2 font-bold rounded-full uppercase text-xl'>EMD Artist</button>
     </div> 
 
 <div className='space-y-5 sm:text-center md:pb-10'>

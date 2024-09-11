@@ -8,7 +8,7 @@ export const LanguageSwitcher = () => {
     }
 
   return (
-    <div>
+    <div className='hidden'>
         <select onChange={changeLanguage} value={i18n.language} className='py-2.5 px-1 bg-slate-900 text-white border font-bold' name="" id="">
             <option value="en">EN</option>
             <option value="fr">FR</option>

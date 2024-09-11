@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Formik,Form } from 'formik';
-import { basicSchema } from '../schemas';
-import { CustomInput } from '../components/CustomInput';
+import {emdArtistSchema } from '../schemas';
+import { CustomInput } from '../../common/CustomInput';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 export const EmdArtist = () => {
     const navigate = useNavigate()
+    const [loading, setLoading] = useState(false)
+    const sheetsKey = import.meta.env.VITE_SHEETS_KEY
+
+    const next = async(userInfo)=>{ 
+        try {
+          setLoading(true)
+         const response =  await axios.post(sheetsKey, userInfo)
+          window.location.href = "https://calendly.com/emergencemusicdistribution/30min?month=2024-09"
+
+        } catch (error) {
+       
+        }
+ }
+
   return (
     <>
       <div className='grid grid-cols-12 sm:grid-cols-1 md:grid-cols-1'>
@@ -15,21 +30,23 @@ export const EmdArtist = () => {
 
 <div className='pb-10'>
     <Formik
-    validationSchema={basicSchema}
+    validationSchema={emdArtistSchema}
 
-      initialValues={{ firstName: '', 
+      initialValues={{
+        Type:'Emd Artist',
+        firstName: '', 
         lastName:"",
         location:"",
         email:"",
         phoneNumber:"",
         artistName : "",
         musicGenre:"",
-        spotifyPage:"",
-        instagramPage:"",
+        spotifyLink:"",
+        instagramLink:"",
      }}
      onSubmit={(values,actions)=>{
-      // next(values)
-      console.log(actions)
+      next(values)
+      // console.log(values)
      }}
     >
       {(props) => (
@@ -84,19 +101,20 @@ export const EmdArtist = () => {
 
         <CustomInput
          label={"Spotify Page Link"}
-         name={"spotifyPage"}
+         name={"spotifyLink"}
          type={"text"}
          placeholder={"Enter your Spotify Page Link"}
          /> 
 
         <CustomInput
          label={"Instagram Page Link"}
-         name={"instagramPage"}
+         name={"instagramLink"}
          type={"text"}
          placeholder={"Enter your Instagram Page Link"}
          />
 
-          <button className='bg-gray-600 hover:bg-gray-700 text-white font-semibold py-4 relative top-2 rounded-full w-full uppercase' type="submit">Submit</button>
+<button disabled={loading} className={`${loading?'bg-gray-300':''} bg-gray-600 hover:bg-gray-700 text-white font-semibold py-4 relative top-2 rounded-full w-full uppercase`} type="submit"> {loading?"Loading...":'Submit'}</button>
+
         </Form>
       )}
     </Formik>

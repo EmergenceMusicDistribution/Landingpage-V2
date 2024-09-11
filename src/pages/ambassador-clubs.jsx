@@ -29,7 +29,7 @@ export const AmbassadorClubs = () => {
              </p>
         </div>
 
-<div className="grid grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-5 py-10 px-7">
+<div className="grid grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 md:gap-7 py-10 px-7 sm:px-3">
       {clubs.map((club,i)=>{
         return (
           <div style={{background:'hsla(0, 0%, 100%, .08)'}} className='transition-transform duration-500 ease-in-out transform hover:scale-105 rounded-lg text-white space-y-2 py-7 px-6 shadow' key={i}>

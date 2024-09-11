@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik,Form } from 'formik';
-import { CustomInput } from './CustomInput';
+import { CustomInput } from '../../common/CustomInput';
 import { basicSchema } from '../schemas';
 
-// const submitForm = ()=>{
-//   console.log("submitted")
-// }
-export const BasicExample = ({next}) => (
+
+export const BasicExample = ({next, loading}) => (
   <div className='pb-10'>
     <Formik
     validationSchema={basicSchema}
 
-      initialValues={{ firstName: '', 
+      initialValues={{ 
+        Type:'New Artist',
+        firstName: '', 
         lastName:"",
         age:"",
         dateOfBirth:"",
         location:"",
-        // address:"",
         email:"",
         phoneNumber:"",
         language:"",
         artistName : "",
         musicGenre:"",
-        spotifyPage:"",
-        instagramPage:"",
+        spotifyLink:"",
+        instagramLink:"",
      }}
      onSubmit={(values,actions)=>{
       next(values)
+      // console.log(values)
      }}
     >
       {(props) => (
@@ -56,7 +56,7 @@ export const BasicExample = ({next}) => (
          name={"dateOfBirth"}
          type={"date"}
          placeholder={"Select your DOB"}
-         styles={"bg-gray-500"}
+         styles={"focus:ring appearance-none"}
          />
 
         <CustomInput
@@ -65,13 +65,6 @@ export const BasicExample = ({next}) => (
          type={"text"}
          placeholder={"Enter your Location"}
          />
-
-        {/* <CustomInput
-         label={"Address"}
-         name={"address"}
-         type={"text"}
-         placeholder={"Enter your Address"}
-         /> */}
 
         <CustomInput
          label={"Email"}
@@ -110,19 +103,19 @@ export const BasicExample = ({next}) => (
 
         <CustomInput
          label={"Spotify Page Link"}
-         name={"spotifyPage"}
+         name={"spotifyLink"}
          type={"text"}
          placeholder={"Enter your Spotify Page Link"}
          /> 
 
         <CustomInput
          label={"Instagram Page Link"}
-         name={"instagramPage"}
+         name={"instagramLink"}
          type={"text"}
          placeholder={"Enter your Instagram Page Link"}
          />
 
-          <button className='bg-gray-600 hover:bg-gray-700 text-white font-semibold py-4 relative top-2 rounded-full w-full uppercase' type="submit">Submit</button>
+          <button disabled={loading} className={`${loading?'bg-gray-300':''} bg-gray-600 hover:bg-gray-700 text-white font-semibold py-4 relative top-2 rounded-full w-full uppercase`} type="submit"> {loading?"Loading...":'Submit'}</button>
         </Form>
       )}
     </Formik>

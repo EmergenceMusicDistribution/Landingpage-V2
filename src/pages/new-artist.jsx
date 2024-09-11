@@ -5,18 +5,18 @@ import { BasicExample } from '../components/FormikForm';
 
 export const NewArtist = () => {
     const navigate = useNavigate()
+    const [loading, setLoading] = useState(false)
     const sheetsKey = import.meta.env.VITE_SHEETS_KEY
 
 const next = async(userInfo)=>{ 
-       try {
-         await axios.post(sheetsKey, userInfo)
-         .then(response=>{
-            
-             window.location.href = "https://calendly.com/emergencemusicdistribution/30min?month=2024-09"
-         })
-       } catch (error) {
-        console.log(error)   
-       }
+  try {
+    setLoading(true)
+   const response =  await axios.post(sheetsKey, userInfo)
+    window.location.href = "https://calendly.com/emergencemusicdistribution/30min?month=2024-09"
+
+  } catch (error) {
+ 
+  }
 }
 
 
@@ -28,7 +28,7 @@ const next = async(userInfo)=>{
   <h1 className='text-3xl font-bold text-white'>Welcome to <Link to={'/'} className='text-pink-600'>Emergence</Link> </h1>
     <h1 className='text-lg text-white'>Please fill the form with your information!</h1>
 
-    <BasicExample next={next}/>
+    <BasicExample next={next} loading={loading}/>
        
 </div>
 

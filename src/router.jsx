@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { RootLayout } from './layout/RootLayout'
-import { Home } from './pages/home'
+import { Home } from './pages/home/home'
 import { NewArtist } from './pages/new-artist'
 import { Services } from './pages/services'
 import { AmbassadorClubs } from './pages/ambassador-clubs'
