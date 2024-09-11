@@ -17,7 +17,7 @@ export const EmdArtist = () => {
           window.location.href = "https://calendly.com/emergencemusicdistribution/30min?month=2024-09"
 
         } catch (error) {
-       
+       console.log(error)
         }
  }
 
