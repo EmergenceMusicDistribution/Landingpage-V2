@@ -38,7 +38,7 @@ export const Section1 = () => {
 </div>
 
 {/* <div className=''> */}
-    <img  className='w-1/2 md:w-full sm:w-full' src="images/bg.png" alt="" />
+    <img  className='w-1/2 md:w-full sm:w-full' src="/images/bg.png" alt="" />
 {/* </div> */}
     </div>
     </>
