@@ -6,8 +6,8 @@ export const Navbar = () => {
     const navigate = useNavigate()
   return (
     <div style={{background: location.pathname==='/'? 'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)' : 'linear-gradient(90deg, #231517, #121213 49%, #1e1925)'}} className={`${location.pathname==='/new-artist' || location.pathname==='/emd-artist'?"hidden":null} flex items-center justify-between sm:px-2 md:px-16 px-20 py-4`}>
-      <div onClick={()=>navigate('/')} className=' cursor-pointer sm:pl-4'>
-        <img className='sm:w-3/4 ' src="/sitelogo.svg" alt="" />
+      <div onClick={()=>navigate('/')} className=' cursor-pointer sm:pl-4 '>
+        <img className='sm:w- ' src="/sitelogo.svg" alt="" />
       </div>
         <div className='nav-link text-gray-300 sm:hidden md:hidden uppercase space-x-7'>
         <NavLink to={'/'} className='hover:text-pink-700'>Home</NavLink>
