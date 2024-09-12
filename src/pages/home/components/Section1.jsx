@@ -5,13 +5,14 @@ import { useNavigate } from 'react-router-dom'
 export const Section1 = () => {
     const {t} = useTranslation()
     const navigate = useNavigate()
+    const mainHeading = t('Welcome').match(/\b\w+\b/g)
   return (
     <>
     <div style={{background:'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)'}} className="flex sm:flex-col items-center md:flex-col px-20  pt-5 sm:px-2 text-white sm:gap-4 md:gap-4 bg-slate-950">
 
     <div className='space-y-7'>
-    <h1 className='text-5xl sm:text-3xl font-bold sm:text-center leading-snug'>
-    {t('Welcome')}
+    <h1 className='text-5xl sm:text-3xl font-bold uppercase sm:text-center leading-snug'>
+    {mainHeading.slice(0, -1).join(" ")} <span className='text-yellow-500'>{mainHeading[mainHeading.length - 1]}</span> 
     </h1>
  
     <div className='space-x-4 sm:space-x-0 sm:flex flex-col items-center gap-5'>
@@ -38,7 +39,7 @@ export const Section1 = () => {
 </div>
 
 {/* <div className=''> */}
-    <img  className='w-1/2 md:w-full sm:w-full' src="/images/bg.png" alt="" />
+    <img  className='w-1/2 h-full md:w-full sm:w-full' src="/images/bg.png" alt="" />
 {/* </div> */}
     </div>
     </>
