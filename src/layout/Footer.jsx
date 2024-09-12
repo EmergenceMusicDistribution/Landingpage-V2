@@ -29,7 +29,7 @@ export const Footer = () => {
             <h1 className='font-bold text-lg'>Community</h1>
             <Link className='text-gray-400'>Facebook</Link>
             <Link className='text-gray-400'>Twitter</Link>
-            <Link to={'https://www.2019.emergencemusicdistribution.com/services'} className='text-gray-400'>Instagram</Link>
+            <Link to={'https://www.2019.emergencemusicdistribution.com'} className='text-gray-400'>Instagram</Link>
             <Link className='text-gray-400'>Tiktok</Link>
             <Link className='text-gray-400'>Youtube</Link>
         </div>
