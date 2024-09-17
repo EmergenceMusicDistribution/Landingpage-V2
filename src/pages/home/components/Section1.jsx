@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
+import { Page } from '../../../components/Page'
 
 export const Section1 = () => {
     const {t} = useTranslation()
@@ -9,6 +10,16 @@ export const Section1 = () => {
   return (
     <>
     <div style={{background:'linear-gradient(90deg, #382d50, #3a2d50 57%, #7a2e44)'}} className="flex sm:flex-col items-center md:flex-col px-20  pt-5 sm:px-2 text-white sm:gap-4 md:gap-4 bg-slate-950">
+
+        {/* <Page
+          title={"Emergence Music Distribution"}
+          description={"Emergence Music Distribution Home Page"}
+          name={"Emergence Music Distribution"}
+          type={"website"}
+          headingStyles={'text-5xl sm:text-3xl font-bold uppercase sm:text-center md:text-center leading-snug'}
+        > */}
+
+       
 
     <div className='space-y-7'>
     <h1 className='text-5xl sm:text-3xl font-bold uppercase sm:text-center md:text-center leading-snug'>
@@ -41,6 +52,8 @@ export const Section1 = () => {
 {/* <div className=''> */}
     <img  className='w-1/2  md:w-full sm:w-full' src="/images/bg.png" alt="emergence music hero image" />
 {/* </div> */}
+
+{/* </Page> */}
     </div>
     </>
   )
