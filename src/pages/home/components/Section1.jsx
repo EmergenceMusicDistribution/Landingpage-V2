@@ -22,12 +22,12 @@ export const Section1 = () => {
 
 <div className='space-y-5 sm:text-center md:text-center md:pb-10'>
     <div>
-        <h1 className='uppercase text-pink-500 font-bold text-2xl'>{t('newArtist')}</h1>
+        <h2 className='uppercase text-pink-500 font-bold text-2xl'>{t('newArtist')}</h2>
         <p className='text-xl'>PLEASE REQUEST A MUSIC EVALUATION.</p>
     </div>
 
     <div className='space-y-1'>
-        <h1 className='uppercase text-teal-500  font-bold text-2xl'>EMD Artist</h1>
+        <h2 className='uppercase text-teal-500  font-bold text-2xl'>EMD Artist</h2>
         <p className='text-xl'>IF YOU HAVE A NEW RELEASE COMING SOON, PLEASE CONTACT US AT</p>
         <div className=' overflow-hidden break-all'>
         <a className='text-blue-500 hover:text-blue-600 uppercase text-xl' href="mailto:SUPPORT@EMERGENCEMUSICDISTRIBUTION.COM">support@emergencemusicdistribution.com</a>
@@ -39,7 +39,7 @@ export const Section1 = () => {
 </div>
 
 {/* <div className=''> */}
-    <img  className='w-1/2 h-full md:w-full sm:w-full' src="/images/bg.png" alt="" />
+    <img  className='w-1/2  md:w-full sm:w-full' src="/images/bg.png" alt="emergence music hero image" />
 {/* </div> */}
     </div>
     </>

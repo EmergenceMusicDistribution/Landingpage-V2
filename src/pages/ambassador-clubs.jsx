@@ -1,12 +1,21 @@
 import { FaCheck, FaRegCheckCircle } from "react-icons/fa"
 import { clubs } from "../data/clubs"
+import { Page } from "../components/Page"
 
 export const AmbassadorClubs = () => {
 
   return (
-    <div style={{background:'linear-gradient(90deg, #231517, #121213 49%, #1e1925)'}}  className='px-20 sm:px-5 md:px-10 py-8 space-y-3'>
-        <h1 className='text-4xl font-bold text-center text-yellow-500'>Emergence Music Ambassador Clubs</h1>
-        <p className='text-[#a1a1a1] text-center text-lg'>Join one of our clubs and become part of the Elite of Music Artists.</p>
+    <div style={{background:'linear-gradient(90deg, #231517, #121213 49%, #1e1925)'}}  className='px-20 sm:px-5 md:px-10 py-8 '>
+    <Page
+    title={"Emergence Music Ambassador Clubs"}
+    description={"Emergence Music Distribution ambassador clubs."}
+    name={"Emergence Music Distribution"}
+    type={"website"}
+    >
+
+        {/* <h1 className='text-4xl font-bold text-center text-yellow-500'>Emergence Music Ambassador Clubs</h1> */}
+        <p className='text-[#a1a1a1] text-center text-lg py-4'>Join one of our clubs and become part of the Elite of Music Artists.</p>
+        
         <div className='text-[#a1a1a1] text-center space-y-5 text-[16px]'>
             <p>Emergence Music Distribution has created the EMERGENCE MUSIC AMBASSADOR CLUBS for artists who want to grow in the music industry, challenge themselves and perform better in a competitive environment.
              We believe this is crucial to professional digital artistic development, which is why we created a revolutionary structure where artists can sharpen their musical skills, their music marketing strategies, 
@@ -36,7 +45,7 @@ export const AmbassadorClubs = () => {
             <div className="">
             <img className="w-1/2 m-auto" src={club.image} alt="" />
             </div>
-            <h1 className="font-bold text-lg">{club.title}</h1>
+            <h2 className="font-bold text-lg">{club.title}</h2>
             <h2 >{club.subTitle}</h2>
               <ul className="px-4">
                 {club.list.map((list,i)=>{
@@ -65,7 +74,9 @@ export const AmbassadorClubs = () => {
 </div>
 
 
-            </div>
+
+    </Page>
+    </div>
       
   )
 }

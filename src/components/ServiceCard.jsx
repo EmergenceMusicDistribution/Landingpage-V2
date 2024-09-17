@@ -19,7 +19,7 @@ export const MiniServiceCard = ({...props})=>{
   return (
     <div style={{background:'hsla(0, 0%, 100%, .08)'}} className='w-5/6 sm:w-full md:w-full m-auto transition-transform duration-500 ease-in-out transform hover:scale-105 w--7 rounded-lg text-white space-y-2 py-4 px-5 shadow'>
         <div className='flex justify-center '>
-        <img className='w-1/3 ' src={props.img} alt="icon" />
+        <img className='w-1/3 ' src={props.img} alt="service image" />
         </div>
         <h1 className='text-lg font-bold capitalize'>{props.title}</h1>
         <p className='text-[#b9b6b6]'>
