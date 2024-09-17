@@ -11,6 +11,7 @@ export const AmbassadorClubs = () => {
     description={"Emergence Music Distribution ambassador clubs."}
     name={"Emergence Music Distribution"}
     type={"website"}
+    headingStyles={'text-4xl font-bold text-center text-yellow-500'}
     >
 
         {/* <h1 className='text-4xl font-bold text-center text-yellow-500'>Emergence Music Ambassador Clubs</h1> */}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import SEO from './SEO'
 
-export const Page = ({title,description,Name,type,children}) => {
+export const Page = ({title,description,Name,type,children, headingStyles}) => {
   return (
     <>
     <SEO
@@ -12,7 +12,7 @@ export const Page = ({title,description,Name,type,children}) => {
     type={type}
     />
     <main>
-        <h1 className='text-4xl font-bold text-center text-yellow-500'>{title}</h1>
+        <h1 className={headingStyles}>{title}</h1>
         {children}
     </main>
         

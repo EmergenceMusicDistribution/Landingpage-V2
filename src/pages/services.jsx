@@ -1,6 +1,7 @@
 import React from 'react'
 import { MiniServiceCard, ServiceCard } from '../components/ServiceCard'
 import { services } from '../services'
+import { Page } from '../components/Page'
 
 export const Services = () => {
     const promotionServices = [
@@ -8,8 +9,8 @@ export const Services = () => {
             title:'Base promotion',
             img:'images/single-promo-icon.svg', 
             pricing : {
-                prevPrice:'399.99$ USD',
-                currentPrice:'299.99$ USD '
+                prevPrice:'$399.99 USD',
+                currentPrice:'$299.99 USD + tax'
             },
             duration:'30 days',
             list: [
@@ -33,7 +34,7 @@ export const Services = () => {
             img:'images/single-promo-icon.svg', 
             pricing : {
                 // prevPrice:'',
-                currentPrice:' 133.33$ USD / Monthly'
+                currentPrice:' 133.33$ USD / Monthly + tax'
             },
             duration:'90 days',
             list: [
@@ -57,10 +58,19 @@ export const Services = () => {
   return (
     <div style={{background:'linear-gradient(90deg, #231517, #121213 49%, #1e1925)'}} className=' px-28 md:px-10 sm:px-0 py-10'>
 
-        <h1 className='uppercase sm:px-5 font-bold text-white text-lg'>Welcome to emergence music distribution services.</h1>
+        <Page
+            title={"Emergence Music Services"}
+            description={"Emergence Music Distribution Services page"}
+            name={"Emergence Music Distribution"}
+            type={"website"}
+            headingStyles={'uppercase sm:px-5 font-bold text-white text-lg'}
+        >
+
+        
+        {/* <h1 className='uppercase sm:px-5 font-bold text-white text-lg'>Welcome to emergence music distribution services.</h1> */}
         
         <div className=' sm:px-2 text-white pt-4 space-y-1 w-3/4 m-auto sm:w-full md:w-full'>
-            <h1 className='text-lg font-bold text-center text-teal-500'>Single Promotion Service</h1>
+            <h3 className='text-lg font-bold text-center text-teal-500'>Single Promotion Service</h3>
             <p className='text-gray-300 text-center leading-7'>
           <b className='text-white'>The Single Promotion Pack</b>  is designed to help artists maximize exposure for their music. This all-in-one service includes <b className='text-white'>Graphic Design</b>  for eye-catching visuals,
              a tailored <b className='text-white'>Marketing Campaign</b>  to boost visibility, and <b className='text-white'>Email Promotion</b>  to engage your target audience. Perfect for artists looking to amplify their reach, 
@@ -77,7 +87,7 @@ export const Services = () => {
         <div className='pt-5'>
 
         <div className='space-y-2 sm:px-4'>
-        <h1  className='bg-gradient-to-r from-[#f7522b] to-[#941f7a] bg-clip-text text-transparent font-bold text-5xl py-2 sm:text-3xl text-center'>Digital Artist Development Services</h1>
+        <h2  className='bg-gradient-to-r from-[#f7522b] to-[#941f7a] bg-clip-text text-transparent font-bold text-5xl py-2 sm:text-3xl text-center'>Digital Artist Development Services</h2>
     <div className='w-1/2 sm:w-full md:w-2/3 m-auto'>
     <p className='text-center text-gray-400'>
     We empower the artist by digitally branding themselves. By assisting them with all the tools
@@ -94,6 +104,8 @@ export const Services = () => {
             )
         })}
         </div>
+
+        </Page>
         
             </div>
   )

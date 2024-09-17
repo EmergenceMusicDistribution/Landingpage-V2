@@ -28,11 +28,11 @@ export const Services = () => {
     <div className="bg-gradient-to-r from-[#35222d] to-[#3e2b47]  py-7 space-y-5 sm:px-1.5">
 
 
-      <h1 className="Capitalize text-4xl sm:text-3xl text-white font-bold text-center">
+      <h2 className="Capitalize text-4xl sm:text-3xl text-white font-bold text-center">
         <span className="">
           Digital Artist Development <span className="text-pink-500">Services</span> 
         </span>
-      </h1>
+      </h2>
 
       <div className="w-1/3 md:w-2/3 sm:w-full m-auto text-center">
         <p className=" text-lg text-[#a1a1a1]">
