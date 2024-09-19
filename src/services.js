@@ -19,7 +19,7 @@ export const services = [
       {
         image: "images/services/Marketing.svg",
         title: "Marketing Campaign", 
-        description: "Plan your promotional music campaign"
+        description: "Plan your promotional music campaign."
       },
       {
         image: "images/services/Music-playlist.svg",

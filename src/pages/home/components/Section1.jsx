@@ -23,7 +23,8 @@ export const Section1 = () => {
 
     <div className='space-y-7'>
     <h1 className='text-5xl sm:text-3xl font-bold uppercase sm:text-center md:text-center leading-snug'>
-    {mainHeading.slice(0, -1).join(" ")} <span className='text-yellow-500'>{mainHeading[mainHeading.length - 1]}</span> 
+    {/* {mainHeading.slice(0, -1).join(" ")} <span className='text-yellow-500'>{mainHeading[mainHeading.length - 1]}</span>  */}
+    Welcome to Emergence
     </h1>
  
     <div className='space-x-4 sm:space-x-0 sm:flex sm:flex-col md:flex justify-center  items-center gap-5 '>

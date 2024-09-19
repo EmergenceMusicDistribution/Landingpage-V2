@@ -6,7 +6,7 @@ import { Page } from '../components/Page'
 export const Services = () => {
     const promotionServices = [
         {
-            title:'Base promotion',
+            title:'Base Single Promotion',
             img:'images/single-promo-icon.svg', 
             pricing : {
                 prevPrice:'$399.99 USD',
@@ -30,7 +30,7 @@ export const Services = () => {
 
         }, 
         {
-            title:'Subscription single promo (Full Price 399.99$)',
+            title:'Subscription Base Single Promotion (Full Price 399.99$)',
             img:'images/single-promo-icon.svg', 
             pricing : {
                 // prevPrice:'',

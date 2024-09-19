@@ -47,7 +47,7 @@ export const MiniServiceCard = ({...props})=>{
           })}
 
         <div onClick={()=>{window.location.href = "https://calendly.com/emergencemusicdistribution/30min?month=2024-09"}} className='flex justify-center pt-3'>
-        <button className='bg-gradient-to-r from-[#6c54ad] to-[#f04762] hover:text-blue-500 border px-5 py-2.5 rounded-full uppercase shadow-lg font-semibold'>request purchase</button>
+        <button className='bg-gradient-to-r from-[#6c54ad] to-[#f04762] hover:text-blue-500 border px-5 py-2.5 rounded-full uppercase shadow-lg font-semibold'>emerge now</button>
         </div>
     </div>
   )

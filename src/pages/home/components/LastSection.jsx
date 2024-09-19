@@ -5,7 +5,7 @@ export const LastSection = () => {
     <div style={{background:'linear-gradient(90deg, #1d1315, #241c30)'}} className='bg-slate-900 text-white md:px-7 pb-10'>
 
         <div className='flex flex-col'>
-        <h3 className='text-4xl sm:text-3xl order-2 font-bold sm:px-4 capitalize py-6 th3ext-center'>distribute and sell your music video</h3> 
+        <h3 className='text-4xl sm:text-3xl order-2 font-bold sm:px-4 capitalize py-6 text-center'>distribute and sell your music video</h3> 
         <p className='w-1/2 md:w-full order-3 sm:px-3 text-center m-auto text-l text-[#a1a1a1] sm:w-full '>With our exclusive video channel partnerships. Access and take advantage of our unique network to increase your revenue as an Emergence artist. Get your videos seen and heard universally.</p>
         <img className='w-[270px] order-1 m-auto mt-7' src="images/vevo.png" alt="Vevo" />
         </div>

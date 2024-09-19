@@ -1,6 +1,7 @@
 import { FaCheck, FaRegCheckCircle } from "react-icons/fa"
 import { clubs } from "../data/clubs"
 import { Page } from "../components/Page"
+import { Link } from "react-router-dom"
 
 export const AmbassadorClubs = () => {
 
@@ -75,6 +76,9 @@ export const AmbassadorClubs = () => {
 </div>
 
 
+<Link to={'/new-artist'} className="flex shadow uppercase justify-center bg-gradient-to-r from-[#6c54ad] to-[#f04762] px-7 py-3.5 rounded-full w-fit m-auto text-white hover:text-blue-400 font-semibold">
+        emerge now
+      </Link>
 
     </Page>
     </div>
