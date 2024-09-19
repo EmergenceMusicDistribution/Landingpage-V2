@@ -1,4 +1,3 @@
-import React from 'react'
 
 export const FeaturesCard = ({title,description,image}) => {
   return (
