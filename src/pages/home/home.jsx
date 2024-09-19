@@ -6,7 +6,9 @@ import { LastSection } from './components/LastSection'
 export const Home = () => {
   return (
     <div>
-      <h1>Welcome to Emergence Music Distribution.</h1>
+      <h1 className='text-blue-600'>Welcome to Emergence Music Distribution.
+        Welcome 
+      </h1>
     <Section1/>
     <Section2/>  
     <Services/> 
