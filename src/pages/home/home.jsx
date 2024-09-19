@@ -1,4 +1,3 @@
-import React from 'react'
 import { Section2 } from './components/Section2'
 import { Section1 } from './components/Section1'
 import { Services } from './components/Services'
